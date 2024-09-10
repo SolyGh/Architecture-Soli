@@ -53,61 +53,66 @@ const About = () => {
               <p className="text-black">lorem epsum dolor, est .</p>
             </span>{" "}
           </div>
+          git remot
         </section>
-        <section className="lg: flex justify-between items-center relative mt-12 lg:p-8">
-          <div className="flex justify-center">
-            <img src={Image1} alt="" className="lg:w-80 w-80" />
+        <section className="lg:flex justify-between items-center relative mt-12 lg:p-8">
+          <div className="flex justify-center lg:w-1/2">
+            <img
+              src={Image1}
+              alt="Architectural Journey"
+              className="lg:w-96 w-80 transition-transform duration-500 ease-in-out transform hover:scale-110"
+            />
           </div>
-          <div className="lg:w-1/2 lg:py-0 py-20">
-            <p className="text-[#fb7a3f]">Our architects journey</p>
-            <h1 className="text-[#054130] lg:text-5xl text-xl primary-font font-semibold pt-4 pb-6">
-              Beautiful acoustics &{" "}
+          <div className="lg:w-1/2 lg:py-0 py-20 space-y-6">
+            <p className="text-[#fb7a3f] text-lg tracking-wider">
+              Our Architects Journey
+            </p>
+            <h1 className="text-[#054130] lg:text-5xl text-3xl primary-font font-semibold pt-4 pb-6 leading-tight">
+              Beautiful Acoustics &{" "}
               <span className="underline decoration-[#fdca51]">
                 Achievements
               </span>
             </h1>
-            <p className="text-black leading-8">
-              Studying Architecture is demanding and is rated as one of the most
+            <p className="text-black leading-8 text-lg">
+              Studying architecture is demanding and is rated as one of the most
               challenging courses at the university. It requires long hours,
               commitment, and a seven-year study period.
             </p>
-            <div className="flex items-center lg:gap-x-8 py-8">
-              <button className="rounded-full px-4 py-2 flex items-center text-sm bg-[#fd7b47] text-white gap-2 transition ease-out duration 300 transform hover:scale-110">
-                <p>Read more</p>
+            <div className="flex items-center lg:gap-x-8 gap-4 py-8">
+              <button className="rounded-full px-6 py-3 flex items-center text-sm bg-[#fd7b47] text-white gap-2 transition ease-out duration-300 transform hover:scale-110 hover:bg-[#e76934] shadow-lg">
+                <p>Read More</p>
                 <IoMdArrowDropright className="text-xl" />
               </button>
-              <button className="rounded full px-4 py 2 flex items center text-sm text white gap 2 transition ease-out duration 300 transform hover:scale-110">
+              <button className="rounded-full px-6 py-3 flex items-center text-sm bg-white text-[#fd7b47] gap-2 transition ease-out duration-300 transform hover:scale-110 hover:bg-[#f5f5f5] shadow-lg">
                 <p>View Projects</p>
                 <IoMdArrowDropright className="text-xl" />
               </button>
             </div>
-            <div className="flex justify-between pt-4 lg:gap-0 gap-2">
-              <span>
-                <h1 className="text-[#054130] primary-font text-4xl font-semibold">
+            <div className="flex justify-between pt-4 lg:gap-8 gap-4">
+              <span className="text-center">
+                <h1 className="text-[#054130] primary-font text-5xl font-bold">
                   12
                 </h1>
-                <p className="w-1/2 lg:text-base text-sm">
-                  Years of experience
-                </p>
+                <p className="text-lg">Years of Experience</p>
               </span>
-              <span>
-                <h1 className="text-[#054130] primary font text-4xl font-semibold">
+              <span className="text-center">
+                <h1 className="text-[#054130] primary-font text-5xl font-bold">
                   246
                 </h1>
-                <p className="w-1/2 lg:text-base text-sm">Projects completed</p>
+                <p className="text-lg">Projects Completed</p>
               </span>
-              <span>
-                <h1 className="text-[#054130] primary font text-4xl font-semibold">
+              <span className="text-center">
+                <h1 className="text-[#054130] primary-font text-5xl font-bold">
                   42
                 </h1>
-                <p className="w-1/2 lg:text-base text-sm">Awards gained</p>
+                <p className="text-lg">Awards Gained</p>
               </span>
             </div>
           </div>
-          <IoIosArrowUp className="text-[#fb7a3f] text-4xl absolute top-0  left-0 rotate-[315deg]" />
-          <IoIosArrowUp className="text-[#fb7a3f] text-4xl absolute top-0  left-0 rotate-[315deg]" />
-          <IoIosArrowUp className="text-[#fb7a3f] text-4xl absolute top-0  left-0 rotate-[315deg]" />
-          <IoIosArrowUp className="text-[#fb7a3f] text-4xl absolute top-0  left-0 rotate-[315deg]" />
+          <IoIosArrowUp className="text-[#fb7a3f] text-4xl absolute top-2 left-2 animate-bounce rotate-[315deg]" />
+          <IoIosArrowUp className="text-[#fb7a3f] text-4xl absolute top-8 left-8 animate-bounce rotate-[315deg]" />
+          <IoIosArrowUp className="text-[#fb7a3f] text-4xl absolute top-14 left-14 animate-bounce rotate-[315deg]" />
+          <IoIosArrowUp className="text-[#fb7a3f] text-4xl absolute top-20 left-20 animate-bounce rotate-[315deg]" />
         </section>
       </div>
     </div>

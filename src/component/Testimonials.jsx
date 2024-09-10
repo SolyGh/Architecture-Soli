@@ -39,17 +39,16 @@ const Testimonials = () => {
 
   const Card = ({ img, name, title, desc }) => {
     return (
-      <div className="bg-[#06412f] w-80 relative flex justify-center z-20 p-8 mt-40">
-        <button className="rounded-full bg-[#06412f] absolute -top-20 h-32 w-64 rounded-b-none"></button>
+      <div className="bg-[#06412f] w-80 relative flex justify-center z-20 p-8 mt-20 transform transition-transform duration-500 hover:scale-105">
+        <div className="rounded-full bg-[#06412f] absolute -top-20 h-32 w-32 border-4 border-white flex items-center justify-center overflow-hidden">
+          <img src={img} alt={name} className="w-24 h-24 rounded-full" />
+        </div>
         <div className="relative z-20 text-center">
-          <img
-            src={img}
-            alt=""
-            className="w-20 h-20 rounded-full -mt-8 mx-auto"
-          />
-          <p className="text-xl primary-font font-semibold pt-4 pb-2">{name}</p>
+          <p className="text-xl primary-font font-semibold pt-16 pb-2">
+            {name}
+          </p>
           <p className="font-light pb-4">{title}</p>
-          <hr />
+          <hr className="border-[#fdca51]" />
           <p className="pt-4">{desc}</p>
         </div>
       </div>
@@ -60,25 +59,32 @@ const Testimonials = () => {
     <div className="relative overflow-hidden bg-[#003b29] lg:py-24 py-8">
       <div className="h-[50px] bg-[#fff6ed] absolute -bottom-7 -left-[30px] -right-[30px] py-3 px-[30px] rounded-[50%]"></div>
       <div className="xl:w-[1200px] text-white mx-auto px-3">
-        <p>Testimonial</p>
-        <div className="relative lg:pb-0 pb-8"></div>
-        <h1 className="lg:text-4xl primary-font text-xl">
-          What our{" "}
-          <span className="underline decoration-[#fdca51]">Client</span> say
-        </h1>
+        <div className="text-center mb-12">
+          <p className="text-lg uppercase text-[#fdca51] tracking-wider">
+            Testimonial
+          </p>
+          <h1 className="lg:text-4xl primary-font text-3xl font-bold">
+            What our{" "}
+            <span className="underline decoration-[#fdca51]">Clients</span> say
+          </h1>
+        </div>
         <Carousel
           swipeable={true}
           draggable={false}
           responsive={responsive}
-          arrows={true}
+          arrows={false}
           infinite
           autoPlay
           renderButtonGroupOutside={<ButtonGroup />}
           keyBoardControl={true}
+          customTransition="all 1s ease"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          itemClass="carousel-item-padding-40-px"
         >
           <Card
             img={Img1}
-            name={"ahmed"}
+            name={"Ahmed"}
             title={"CEO at AST"}
             desc={
               "We would like to take the opportunity to express our delights with the ways things are progressing."
@@ -86,7 +92,7 @@ const Testimonials = () => {
           />
           <Card
             img={Img1}
-            name={"nader"}
+            name={"Nader"}
             title={"CEO at AST"}
             desc={
               "We would like to take the opportunity to express our delights with the ways things are progressing."
@@ -94,36 +100,13 @@ const Testimonials = () => {
           />
           <Card
             img={Img1}
-            name={"shiko"}
+            name={"Shiko"}
             title={"CEO at AST"}
             desc={
               "We would like to take the opportunity to express our delights with the ways things are progressing."
             }
           />
-          <Card
-            img={Img1}
-            name={"shiko"}
-            title={"CEO at AST"}
-            desc={
-              "We would like to take the opportunity to express our delights with the ways things are progressing."
-            }
-          />
-          <Card
-            img={Img1}
-            name={"shiko"}
-            title={"CEO at AST"}
-            desc={
-              "We would like to take the opportunity to express our delights with the ways things are progressing."
-            }
-          />
-          <Card
-            img={Img1}
-            name={"shiko"}
-            title={"CEO at AST"}
-            desc={
-              "We would like to take the opportunity to express our delights with the ways things are progressing."
-            }
-          />
+          {/* Add more cards here if needed */}
         </Carousel>
       </div>
     </div>

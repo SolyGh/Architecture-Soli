@@ -50,7 +50,7 @@ const Projects = () => {
             />
           ))}
         </section>
-        <section className="flex items-center justify-between mt-24 mb-16 gap-2">
+        <section className="flex items-center flex-wrap justify-between mt-24 mb-16 gap-2">
           <span className="flex items-center gap-x-2">
             <MdOfflineBolt className="text-3xl" />
             <p className="font-medium primary-font text-xl">Boltshift</p>
